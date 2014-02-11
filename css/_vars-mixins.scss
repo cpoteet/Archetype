@@ -1,0 +1,16 @@
+// Variables
+
+
+// Mixins
+
+@mixin mquery($size) {
+  @if $size == large {
+    @media (min-width: 75em) { @content; }
+  }
+  @else if $size == medium {
+    @media (min-width: 50em) { @content; }
+  }
+  @else if $size == small {
+    @media (min-width: 20em)  { @content; }
+  }
+}
