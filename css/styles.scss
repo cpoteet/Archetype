@@ -6,7 +6,26 @@
 
 @import "reset-normalize.scss";
 
-
 body {
-    
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern";
+    -webkit-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern=1";   
 }
+
+// Import header styles
+
+@import "header";
+
+// Import main body styles
+
+@import "main";
+
+// Import footer styles
+
+@import "footer";
+
+// Import print styles
+
+@import "print";
