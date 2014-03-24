@@ -1,41 +1,20 @@
-/* Reset */
+/*
+    Normalize styles. Handle browser inconsistencies in rendering elements.
+*/
 
-* {
-    vertical-align: baseline;
-    font-family: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-*, *:before, *:after {
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
+*, :after, :before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-body {
-    padding: 5px;
-}
-h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, ul, ol, dl {
-    margin: 20px 0;
-}
-li, dd, blockquote {
-    margin-left: 40px;
-}
-dt {
-    font-weight: bold;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* Normalize (Edited) */
-
 html {
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 100%;
+}
+body {
+  margin: 0;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block;
@@ -65,6 +44,14 @@ b, strong {
 }
 dfn {
   font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
 }
 small {
   font-size: 80%;
@@ -103,9 +90,9 @@ code, kbd, pre, samp {
   font-size: 1em;
 }
 button, input, optgroup, select, textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0;
+  color: inherit; 
+  font: inherit; 
+  margin: 0; 
 }
 button {
   overflow: visible;
@@ -114,8 +101,9 @@ button, select {
   text-transform: none;
 }
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
+  -webkit-appearance: none; 
+  border-radius: 0;
+  cursor: pointer; 
 }
 button[disabled], html input[disabled] {
   cursor: default;
@@ -135,9 +123,10 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   height: auto;
 }
 input[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
+  -webkit-appearance: none;
+  border-radius: 0;
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box; /* 2 */
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
@@ -149,14 +138,18 @@ fieldset {
   padding: 0.35em 0.625em 0.75em;
 }
 legend {
-  border: 0; /* 1 */
-  padding: 0; /* 2 */
+  border: 0;
+  padding: 0;
 }
 textarea {
   overflow: auto;
 }
 optgroup {
   font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 td, th {
   padding: 0;

@@ -1,0 +1,97 @@
+/*
+    Responsive grids. Use classes to generate fluid grids. 
+*/
+
+.full-column {
+    width: 100%;
+    margin-right: 0;
+}
+.grid {
+    margin-bottom: $bottomWidth;
+    width: 100%;
+}
+.one-half {
+    @extend %grid-display;
+    @include mquery(medium-large) {
+        width: calc(50% - #{$gutterWidth});
+        margin-right: $gutterWidth;
+        margin-bottom: $bottomWidth;
+    }
+}
+.one-third {
+    @extend %grid-display;
+    @include mquery(medium-large) {
+        width: calc(33.33333% - #{$gutterWidth});
+        margin-right: $gutterWidth;
+        margin-bottom: $bottomWidth;
+    }
+}
+.two-third {
+    @extend %grid-display;
+    @include mquery(medium-large) {
+        width: calc(66.66667% - #{$gutterWidth});
+        margin-right: $gutterWidth;   
+        margin-bottom: $bottomWidth;
+    }
+}
+.one-fourth {
+    @extend %grid-display;
+    @include mquery(medium-large) {
+        width: calc(25% - #{$gutterWidth});
+        margin-right: $gutterWidth;
+        margin-bottom: $bottomWidth;
+    }
+}
+.two-fourth {
+    @extend %grid-display;
+    @include mquery(medium-large) {
+        width: calc(50% - #{$gutterWidth});
+        margin-right: $gutterWidth;
+        margin-bottom: $bottomWidth;
+    }
+}
+.three-fourth {
+    @extend %grid-display;
+    @include mquery(medium-large) {
+        width: calc(75% - #{$gutterWidth});
+        margin-right: 1em;
+        margin-bottom: $bottomWidth;
+    }
+}
+.one-fifth {
+    @extend %grid-display;
+    @include mquery(medium-large) {
+        width: calc(20% - #{$gutterWidth});
+        margin-right: $gutterWidth;
+        margin-bottom: $bottomWidth;
+    }
+}
+.two-fifth {
+    @extend %grid-display;
+    @include mquery(medium-large) {
+        width: calc(40% - #{$gutterWidth});
+        margin-right: $gutterWidth;
+        margin-bottom: $bottomWidth;
+    }
+}
+.three-fifth {
+    @extend %grid-display;
+    @include mquery(medium-large) {
+        width: calc(60% - #{$gutterWidth});
+        margin-right: $gutterWidth;
+        margin-bottom: $bottomWidth;
+    }
+}
+.four-fifth {
+    @extend %grid-display;
+    @include mquery(medium-large) {
+        width: calc(80% - #{$gutterWidth});
+        margin-right: $gutterWidth;
+        margin-bottom: $bottomWidth;
+    }
+}
+.one-half:nth-child(2n+2), .one-third:nth-child(3n+3), .one-fourth:nth-child(4n+4), .one-fifth:nth-child(5n+5) {
+    @include mquery(medium-large) {
+        margin-right: 0;
+    }
+}
