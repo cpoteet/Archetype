@@ -2,6 +2,10 @@ jQuery(document).ready(function($) {
   
     "use strict";
     
+    // Remove JS class
+    
+    $("html").removeClass("no-js");
+    
 });
 
 // Add browser/touch information
