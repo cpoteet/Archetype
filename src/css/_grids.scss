@@ -90,8 +90,6 @@
         margin-bottom: $bottomWidth;
     }
 }
-.one-half:nth-child(2n+2), .one-third:nth-child(3n+3), .one-fourth:nth-child(4n+4), .one-fifth:nth-child(5n+5) {
-    @include mquery(medium-large) {
-        margin-right: 0;
-    }
+.last-child {
+   margin-right: 0; 
 }
