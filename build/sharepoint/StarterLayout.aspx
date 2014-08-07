@@ -58,7 +58,7 @@
 
 </div>
 
-<!-- Inline medatadata editing experience; only use colum internal name not GUID -->
+<!-- Inline medatadata editing experience; only use column internal name not GUID -->
 <PublishingWebControls:editmodepanel runat="server" id="layouteditmodepanel"> 
 
 	<div class="page-layout-editmetadata">
