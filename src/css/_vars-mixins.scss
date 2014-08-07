@@ -1,7 +1,13 @@
-// Variables
+// Color Variables
+
+$bodyColor: #333;
+
+// String Variables
 
 $bodyFont: arial, sans-serif;
-$bodyColor: #333;
+
+// Grid Variables
+
 $numCol: 3;
 $gutterWidth: 1em;
 $bottomWidth: 1em;
@@ -51,7 +57,7 @@ $bottomWidth: 1em;
 %grid-display {
     display: inline-block;
 }
-.clear-fix {
+%clear-fix {
   content: "";
   display: table;
   clear: both;
